@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>   
+                                                   
+        <h1>  Adil & Ahesan Food Delivery Quick Cart  </h1>
+        <div id="user-info">
+            <button onclick="login()">Login</button>
+            <button onclick="register()">Register</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="restaurants">
+            <h2>Restaurants</h2>''
+            <div class="restaurant" id="restaurant-1">
+                <h3>Restaurant 1</h3>
+                <button onclick="viewMenu(1)">View Menu</button>
+            </div>
+            <div class="restaurant" id="restaurant-2">
+                <h3>Restaurant 2</h3>
+                <button onclick="viewMenu(2)">View Menu</button>
+            </div>
+        </section>
+
+        <section id="menu" style="display:none;">
+            <button onclick="backToRestaurants()">Back to Restaurants</button>
+            <h2 id="restaurant-name">Menu</h2>
+            <ul id="food-menu"></ul>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;FOR MORE INFORMATION CONTACT </p>
+        <p>&copy; 8970195385</p>
+        <p>&copy;ahesansandarwale@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
